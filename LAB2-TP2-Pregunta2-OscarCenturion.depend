@@ -1,0 +1,134 @@
+# depslib dependency file v1.0
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsaudio.cpp
+	"clsAudio.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsaudio.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1432327182 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\adnconsts.h
+	<SDL/SDL.h>
+	<SDL/SDL_video.h>
+	<SDL/SDL_image.h>
+	<SDL/SDL_ttf.h>
+	<SDL/SDL_mixer.h>
+	<SDL.h>
+	<SDL_video.h>
+	"SDL_image.h"
+	"SDL_ttf.h"
+	"SDL_mixer.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clserror.h
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsdot.cpp
+	"clsDot.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsdot.h
+	"adnConsts.h"
+
+1432327228 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clserror.cpp
+	<cstring>
+	<iostream>
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsevent.cpp
+	"clsEvent.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsevent.h
+	"adnConsts.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsimage.cpp
+	"clsImage.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsimage.h
+	"adnConsts.h"
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clslog.cpp
+	"clsLog.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clslog.h
+	<cstdio>
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsmode.cpp
+	"clsMode.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsmode.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsmusic.cpp
+	"clsMusic.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsmusic.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsrandom.cpp
+	"clsRandom.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsrandom.h
+	<ctime>
+	<cstdlib>
+	<iostream>
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsscreen.cpp
+	"clsScreen.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clsscreen.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clssoundeffect.cpp
+	"clsSoundEffect.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clssoundeffect.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clssprite.cpp
+	"clsSprite.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clssprite.h
+	<iostream>
+	<cstring>
+	"adnConsts.h"
+	"clsError.h"
+	"clsDot.h"
+	"clsImage.h"
+	"clsDot.h"
+	"clsScreen.h"
+
+1443039972 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clstext.cpp
+	"clsText.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clstext.h
+	<iostream>
+	"adnConsts.h"
+	"clsError.h"
+
+1415818188 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clstimer.cpp
+	"clsTimer.h"
+
+1415818188 c:\users\oscar\documents\github\lab2-tp2-pregunta2\adn-x\clstimer.h
+	"clsEvent.h"
+
+1543365744 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\main.cpp
+	<iostream>
+	<adnConsts.h>
+	<clsLog.h>
+	<clsError.h>
+	<clsMotor.h>
+
+1543365744 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmotor.h
+	<clsError.h>
+	<clsEvent.h>
+	<clsMode.h>
+	<clsScreen.h>
+	<adnConsts.h>
+

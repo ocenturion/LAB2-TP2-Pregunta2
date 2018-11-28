@@ -96,7 +96,7 @@
 #include <adnConsts.h>      // Tipos de datos del sistema adn-X.
 #include <clsLog.h>         // stdout.txt para Linux.
 #include <clsError.h>       // Administrador de errores.
-
+#include <clsMotor.h>
 using namespace std;        // Espacio de nombres estandar.
 
 
@@ -126,12 +126,15 @@ int main ( int argc, char** argv )
   //-------------------------------------
   // OBJETOS NECESARIOS PARA EL PROGRAMA
   clsError error;   // Administrador de errores  (necesario).
-
+  clsMotor motor;   //motor de ejecucion del programa
 
   //--------------------------------
   // CODIGO DEL PROGRAMA PRINCIPAL
+    error.set(motor.init());
+    if (error.get()) return error.get();
 
-
+    error.set(motor.run());
+    if (error.get()) return error.get();
   //----------------------------
   // FIN DEL PROGRAMA PRINCIPAL
   cout << endl;
