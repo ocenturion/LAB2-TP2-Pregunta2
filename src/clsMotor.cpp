@@ -2,46 +2,71 @@
 
 int clsMotor::init()
 {
+    cout<<"ingreso al init"<<endl;
     error.set(0);
-    error.set(mode.init(DEFAULT));
-    if(error.get()) return error.get();
+    error.set(mode.init(350,600,32));
+    if(error.get())
+        {
+            mode.crashPrevent();
+            error.show(true);
+            return error.get();
+        }
 
-    error.set(screen.init(mode.getScrWidth(),
-                          mode.getScrHeight(),
-                          mode.getScrDepth(),
+    error.set(screen.init(350,
+                          600,
+                          32,
                           ENABLED,
-                          RESIZABLE
+                          DISABLED
                           ));
-    if(error.get()) return error.get();
+    if(error.get()) {return error.get();}
+    error.set(fondo->Iniciar(&screen));
+    if(error.get()) {return error.get();}
+
+    cout<<"salio del init"<<endl;
     return error.get();
 }
+
 int clsMotor::run()
 {
     error.set(0);
     bool salir=false;
     screen.clean(BLUE);
+    fondo->setI(0);
+    fondo->paste(screen.getPtr());
     screen.refresh();
     while (!salir)
     {
+        cout<<"ingreso al juego"<<endl;
         if (event.wasEvent())
         {
-            if (event.getEventType()==KEY_PRESSED)
+            switch (event.getEventType())
             {
-                error.set(keyCommand(&salir,event.getKey()));
-                if(error.get()) return error.get();
+            case KEY_PRESSED:
+                {
+                    if (event.getKey()==KEY_ENTER)
+                    {
+                        salir=true;
+                    }
+                }break;
+            }
+            if(error.get())
+            {
+                error.show(true);
+                return error.get();
             }
         }
     }
     return error.get();
 }
-int clsMotor::keyCommand(bool*salir,Uint16 key)
+
+int clsMotor::keyCommand()
 {
     error.set(0);
-    switch(key)
+    switch(event.getKey())
     {
     case KEY_ESCAPE:
         {
-            *salir=true;
+            salir=true;
         }break;
     }
     return error.get();

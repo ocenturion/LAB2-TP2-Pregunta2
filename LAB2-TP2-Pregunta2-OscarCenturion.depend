@@ -125,10 +125,21 @@
 	<clsError.h>
 	<clsMotor.h>
 
-1543365744 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmotor.h
+1543706940 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmotor.h
 	<clsError.h>
 	<clsEvent.h>
 	<clsMode.h>
 	<clsScreen.h>
 	<adnConsts.h>
+	<clsFondo.h>
+
+1543706548 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmotor.cpp
+	"clsMotor.h"
+
+1543704962 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsfondo.h
+	<clsSprite.h>
+	<clsScreen.h>
+
+1543706666 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsfondo.cpp
+	"clsFondo.h"
 

@@ -2,11 +2,6 @@
            Sistema ADN-X (v. 14.11 estable)
 **********************************************************
 
+ingreso al init
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
-
-**********************************************************
-       El proyecto ADN-X ha finalizado correctamente      
-##########################################################
-Monitor de video cerrado correctamente.
-El modo grafico se cerro correctamente.
