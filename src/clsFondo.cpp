@@ -4,7 +4,7 @@ int clsFondo::Iniciar()
 {
     error.set(0); // seteo el error
 
-    setItems(4);
+    setItems(8);// verificar siempre la cantidad de imagenes
     setI(0);
     error.set(load("recursos/pantallas/Fondos/1.png"));
     if (error.get())return error.get();
@@ -12,24 +12,28 @@ int clsFondo::Iniciar()
     error.set(load("recursos/pantallas/Fondos/2.png"));
     cout<<"carga SpriteFondos "<<endl;
     if (error.get())return error.get();
-//    setI(3);
-//    error.set(load("recursos/pantallas/Fondos/3.png"));
-//    cout<<"carga SpriteFondos "<<endl;
-//    if (error.get())return error.get();
-//    setI(4);
-//    error.set(load("recursos/pantallas/Fondos/4.png"));
-//    cout<<"carga SpriteFondos "<<endl;
-//    if (error.get())return error.get();
-//    setI(1);
-//    error.set(load("recursos/pantallas/Fondos/5.png"));
-//    cout<<"carga SpriteFondos "<<endl;
-//    if (error.get())return error.get();
     setI(2);
-    error.set(load("recursos/pantallas/Fondos/6.jpeg"));
+    error.set(load("recursos/pantallas/Fondos/3.png"));
     cout<<"carga SpriteFondos "<<endl;
     if (error.get())return error.get();
     setI(3);
-    error.set(load("recursos/pantallas/Fondos/7.png"));
+    error.set(load("recursos/pantallas/Fondos/4.png"));
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
+    setI(4);
+    error.set(load("recursos/pantallas/Fondos/5.png"));
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
+    setI(5);
+    error.set(load("recursos/pantallas/Fondos/6.jpeg"));
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
+    setI(6);
+    error.set(load("recursos/pantallas/Fondos/7.png"));//ayuda
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
+    setI(7);
+    error.set(load("recursos/pantallas/Fondos/8.png"));//ranking
     cout<<"carga SpriteFondos "<<endl;
     if (error.get())return error.get();
 //    const char * const SpriteFondos[6]=
@@ -64,7 +68,11 @@ void clsFondo::setMenu()
 {
     setI(1);
 }
-void clsFondo::setDespedida()
+void clsFondo::setJuego()
 {
     setI(2);
+}
+void clsFondo::setDespedida()
+{
+    setI(5);
 }

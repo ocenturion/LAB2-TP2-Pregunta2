@@ -125,7 +125,7 @@
 	<clsError.h>
 	<clsMotor.h>
 
-1543893943 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmotor.h
+1543955658 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmotor.h
 	<clsError.h>
 	<clsEvent.h>
 	<clsMode.h>
@@ -134,17 +134,18 @@
 	<clsPresentacion.h>
 	<clsDespedida.h>
 	<clsMenu.h>
+	<clsJuego.h>
 
-1543893972 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmotor.cpp
+1543957721 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmotor.cpp
 	"clsMotor.h"
 
-1543893799 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsfondo.h
+1543955455 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsfondo.h
 	<clsSprite.h>
 
-1543931533 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsfondo.cpp
+1543955402 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsfondo.cpp
 	"clsFondo.h"
 
-1543878810 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clspresentacion.h
+1543948889 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clspresentacion.h
 	<clsScreen.h>
 	<clsEvent.h>
 	<adnConsts.h>
@@ -158,20 +159,35 @@
 	<clsError.h>
 	<clsFondo.h>
 
-1543882807 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clspresentacion.cpp
+1543955798 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clspresentacion.cpp
 	"clsPresentacion.h"
 
-1543882752 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsdespedida.cpp
+1543954016 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsdespedida.cpp
 	"clsDespedida.h"
 
-1543937902 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmenu.cpp
+1543953946 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmenu.cpp
 	"clsMenu.h"
 
-1543937665 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmenu.h
+1543957721 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmenu.h
 	<clsScreen.h>
 	<clsEvent.h>
 	<adnConsts.h>
 	<clsError.h>
 	<clsFondo.h>
 	<clsPresentacion.h>
+
+1543940228 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsranking.cpp
+	"clsRanking.h"
+
+1543940228 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsranking.h
+
+1543957721 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsjuego.h
+	<clsScreen.h>
+	<clsEvent.h>
+	<adnConsts.h>
+	<clsError.h>
+	<clsFondo.h>
+
+1543957721 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsjuego.cpp
+	"clsJuego.h"
 

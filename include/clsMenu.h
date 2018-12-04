@@ -15,11 +15,11 @@ class clsMenu
         clsEvent *event;
         clsError error;
         clsFondo fondo;
-        clsPresentacion presentacion;
     public:
         int iniciar(clsScreen*,clsEvent*);
         int run();
         int keyCommand(bool*,Uint16);
+        bool ingresoJuego=false;
 };
 
 #endif // CLSMENU_H

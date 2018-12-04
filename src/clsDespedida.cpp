@@ -7,8 +7,7 @@ int clsDespedida::iniciar(clsScreen*scr,clsEvent* ev)
     this->screen=scr;
     this->event=ev;
     error.set(fondo.Iniciar());
-    if(error.get())
-        return error.get();
+    if(error.get())return error.get();
     fondo.setDespedida();
     return error.get();
 }

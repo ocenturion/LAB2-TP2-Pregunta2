@@ -10,6 +10,7 @@ public:
     void setPresentacion();
     void setDespedida();
     void setMenu();
+    void setJuego();
 protected:
     void inherit() {};
 private:

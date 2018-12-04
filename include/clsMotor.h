@@ -8,6 +8,8 @@
 #include <clsPresentacion.h>
 #include <clsDespedida.h>
 #include <clsMenu.h>
+#include <clsJuego.h>
+
 class clsMotor
 {
 public:
@@ -21,6 +23,7 @@ protected:
     clsScreen screen;
     clsPresentacion presentacion;
     clsMenu menu;
+    clsJuego juego;
     clsDespedida despedida;
 };
 

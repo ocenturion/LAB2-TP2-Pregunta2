@@ -1,6 +1,6 @@
-#include "clsPresentacion.h"
+#include "clsRanking.h"
 
-int clsPresentacion::iniciar(clsScreen*scr,clsEvent* ev)
+int clsRanking::iniciar(clsScreen*scr,clsEvent* ev)
 {
     error.set(0);
 
@@ -13,7 +13,7 @@ int clsPresentacion::iniciar(clsScreen*scr,clsEvent* ev)
     return error.get();
 }
 
-int clsPresentacion::run()
+int clsRanking::run()
 {
     error.set(0);
 
@@ -42,7 +42,7 @@ int clsPresentacion::run()
 
     return error.get();
 }
-int clsPresentacion::keyCommand(bool*salir,Uint16 key)
+int clsRanking::keyCommand(bool*salir,Uint16 key)
 {
     cout<<"ingreso al keyCommand"<<endl;
     error.set(0);

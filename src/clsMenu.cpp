@@ -7,8 +7,7 @@ int clsMenu::iniciar(clsScreen*scr,clsEvent* ev)
     this->screen=scr;
     this->event=ev;
     error.set(fondo.Iniciar());
-    if(error.get())
-        return error.get();
+    if(error.get())return error.get();
     fondo.setMenu();
     return error.get();
 }
@@ -35,25 +34,23 @@ int clsMenu::run()
 int clsMenu::keyCommand(bool*salir,Uint16 key)
 {
     cout<<"ingreso al clsMenu::keyCommand"<<endl;
-    error.set(0);
+    error.set(0); // seteo el error
     switch(key)
     {
-    case KEY_j:
-    case KEY_J:
+    case KEY_s:
+    case KEY_S:
     {
         *salir=true;
-//        error.set(presentacion.iniciar(&screen,&event));
-//        if(error.get()) return error.get();
     }
     break;
     case KEY_a:
     case KEY_A:
     {
-        fondo.setI(3);
+        fondo.setI(6);
         fondo.paste(screen->getPtr());
         screen->refresh();
-        bool salir2=false;
-        while (!salir2)
+        bool salirAyuda=false;
+        while (!salirAyuda)
         {
             if (event->wasEvent())
             {
@@ -64,14 +61,46 @@ int clsMenu::keyCommand(bool*salir,Uint16 key)
                         fondo.setI(1);
                         fondo.paste(screen->getPtr());
                         screen->refresh();
-                        salir2=true;
+                        salirAyuda=true;
                     }
                 }
             }
         }
     }
     break;
+    case KEY_R:
+    case KEY_r:
+    {
+        fondo.setI(7);
+        fondo.paste(screen->getPtr());
+        screen->refresh();
+        bool salirRanking=false;
+        while (!salirRanking)
+        {
+            if (event->wasEvent())
+            {
+                if(event->getEventType()==KEY_PRESSED)
+                {
+                    if(event->getKey()==KEY_s || event->getKey()==KEY_S)
+                    {
+                        fondo.setI(1);
+                        fondo.paste(screen->getPtr());
+                        screen->refresh();
+                        salirRanking=true;
+                    }
+                }
+            }
+        }
+    }
+    break;
+    case KEY_J:
+    case KEY_j:
+        {
+             ingresoJuego=true;
+        }
+        break;
     }
     return error.get();
+    cout<<"-salgo del clsMenu::keyCommand"<<endl;
 }
 
