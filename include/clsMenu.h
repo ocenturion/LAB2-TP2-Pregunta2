@@ -6,6 +6,8 @@
 #include <clsError.h>
 #include <clsFondo.h>
 
+
+#include <clsPresentacion.h>
 class clsMenu
 {
       protected:
@@ -13,11 +15,11 @@ class clsMenu
         clsEvent *event;
         clsError error;
         clsFondo fondo;
+        clsPresentacion presentacion;
     public:
         int iniciar(clsScreen*,clsEvent*);
         int run();
         int keyCommand(bool*,Uint16);
-
 };
 
 #endif // CLSMENU_H

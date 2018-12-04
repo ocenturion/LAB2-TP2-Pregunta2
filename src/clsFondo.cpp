@@ -4,7 +4,7 @@ int clsFondo::Iniciar()
 {
     error.set(0); // seteo el error
 
-    setItems(3);
+    setItems(4);
     setI(0);
     error.set(load("recursos/pantallas/Fondos/1.png"));
     if (error.get())return error.get();
@@ -28,7 +28,10 @@ int clsFondo::Iniciar()
     error.set(load("recursos/pantallas/Fondos/6.jpeg"));
     cout<<"carga SpriteFondos "<<endl;
     if (error.get())return error.get();
-
+    setI(3);
+    error.set(load("recursos/pantallas/Fondos/7.png"));
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
 //    const char * const SpriteFondos[6]=
 //{
 //    "recursos/pantallas/Fondos/1.png",
