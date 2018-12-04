@@ -2,16 +2,17 @@
 #define CLSFONDO_H
 
 #include <clsSprite.h>
-#include <clsScreen.h>
 
 class clsFondo : public clsSprite
 {
-    public:
-        int Iniciar(clsScreen *);
-        void inherit(){};
-    protected:
-        clsScreen *pantalla;
-    private:
+public:
+    int Iniciar();
+    void setPresentacion();
+    void setDespedida();
+    void setMenu();
+protected:
+    void inherit() {};
+private:
 };
 
 #endif // CLSFONDO_H

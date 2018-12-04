@@ -5,23 +5,23 @@
 #include <clsMode.h>
 #include <clsScreen.h>
 #include <adnConsts.h>
-#include <clsFondo.h>
-
+#include <clsPresentacion.h>
+#include <clsDespedida.h>
+#include <clsMenu.h>
 class clsMotor
 {
-    public:
-        int init();
-        int run();
-        int keyCommand();
-    protected:
-        clsEvent event;
-        clsError error;
-        clsMode mode;
-        clsScreen screen;
-    private:
-        clsFondo *fondo; //creo un objeto nuevo de la clase llamada
-        bool salir=false;
-
+public:
+    int init();
+    int run();
+    int keyCommand(bool*,Uint16);
+protected:
+    clsEvent event;
+    clsError error;
+    clsMode mode;
+    clsScreen screen;
+    clsPresentacion presentacion;
+    clsMenu menu;
+    clsDespedida despedida;
 };
 
 #endif // CLSMOTOR_H

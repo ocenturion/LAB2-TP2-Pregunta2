@@ -147,11 +147,30 @@ Avis adn++ es un producto registrado de Avis SOFTWARE.
 		<Unit filename="GPL LICENSE/Licencia GPL (traduccion NO OFICIAL - castellano argentina).txt" />
 		<Unit filename="GPL LICENSE/Licencia GPL original (ingles).txt" />
 		<Unit filename="LOG/stdout.txt" />
+		<Unit filename="include/clsDespedida.h" />
 		<Unit filename="include/clsFondo.h" />
+		<Unit filename="include/clsMenu.h" />
 		<Unit filename="include/clsMotor.h" />
+		<Unit filename="include/clsPresentacion.h" />
 		<Unit filename="main.cpp" />
+		<Unit filename="recursos/pantallas/Fondos/1.png" />
+		<Unit filename="recursos/pantallas/Fondos/10.png" />
+		<Unit filename="recursos/pantallas/Fondos/11.png" />
+		<Unit filename="recursos/pantallas/Fondos/12.png" />
+		<Unit filename="recursos/pantallas/Fondos/13.png" />
+		<Unit filename="recursos/pantallas/Fondos/2.png" />
+		<Unit filename="recursos/pantallas/Fondos/3.png" />
+		<Unit filename="recursos/pantallas/Fondos/4.png" />
+		<Unit filename="recursos/pantallas/Fondos/5.png" />
+		<Unit filename="recursos/pantallas/Fondos/6.png" />
+		<Unit filename="recursos/pantallas/Fondos/7.png" />
+		<Unit filename="recursos/pantallas/Fondos/8.png" />
+		<Unit filename="recursos/pantallas/Fondos/9.png" />
+		<Unit filename="src/clsDespedida.cpp" />
 		<Unit filename="src/clsFondo.cpp" />
+		<Unit filename="src/clsMenu.cpp" />
 		<Unit filename="src/clsMotor.cpp" />
+		<Unit filename="src/clsPresentacion.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

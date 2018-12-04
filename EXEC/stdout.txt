@@ -5,3 +5,40 @@
 ingreso al init
 Modo grafico iniciado correctamente.
 Monitor de video iniciado correctamente.
+ingrese a clspresentacion::iniciar
+carga SpriteFondos 
+carga SpriteFondos 
+estoy casi afuera
+ingrese a clsMenu::iniciar
+carga SpriteFondos 
+carga SpriteFondos 
+estoy casi afuera
+ingrese a clsdespedida::iniciar
+carga SpriteFondos 
+carga SpriteFondos 
+estoy casi afuera
+ingreso al run
+ingrese a clspresentacion::run
+ingreso al keyCommand
+ingrese a clsMenu::run
+ingreso al clsMenu::keyCommand
+ingrese a clsdespedida::run
+ingreso al clsdespedida::keyCommand
+
+**********************************************************
+       El proyecto ADN-X ha finalizado correctamente      
+##########################################################
+Se destruyo la imagen0 del sprite sin Nombre
+Se destruyo la imagen1 del sprite sin Nombre
+Se destruyo la imagen2 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen0 del sprite sin Nombre
+Se destruyo la imagen1 del sprite sin Nombre
+Se destruyo la imagen2 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Se destruyo la imagen0 del sprite sin Nombre
+Se destruyo la imagen1 del sprite sin Nombre
+Se destruyo la imagen2 del sprite sin Nombre
+Se destruyeron la imagenes del sprite sin Nombre
+Monitor de video cerrado correctamente.
+El modo grafico se cerro correctamente.
