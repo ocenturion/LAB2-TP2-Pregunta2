@@ -46,6 +46,43 @@ ingrese a clspresentacion::run
 ingreso al keyCommand
 ingrese a clsMenu::run
 ingreso al clsMenu::keyCommand
+ingrese a clsJuego::run
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
+ingreso al clsJuego::keyCommand
+-pase el testo
 ingrese a clsdespedida::run
 ingreso al clsdespedida::keyCommand
 
@@ -61,6 +98,7 @@ Se destruyo la imagen5 del sprite sin Nombre
 Se destruyo la imagen6 del sprite sin Nombre
 Se destruyo la imagen7 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
+El texto FONTS/FreeMono.ttf se cerro correctamente.
 Se destruyo la imagen0 del sprite sin Nombre
 Se destruyo la imagen1 del sprite sin Nombre
 Se destruyo la imagen2 del sprite sin Nombre

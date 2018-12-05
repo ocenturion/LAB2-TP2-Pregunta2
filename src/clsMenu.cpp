@@ -96,7 +96,6 @@ int clsMenu::keyCommand(bool*salir,Uint16 key)
     case KEY_J:
     case KEY_j:
         {
-            cout<<"ingrese a jugar?"<<endl;
              ingresoJuego=true;
              *salir=true;
         }

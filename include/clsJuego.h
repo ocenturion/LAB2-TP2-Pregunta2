@@ -5,7 +5,7 @@
 #include <adnConsts.h>
 #include <clsError.h>
 #include <clsFondo.h>
-
+#include <clsText.h>
 class clsJuego
 {
     protected:
@@ -13,6 +13,7 @@ class clsJuego
         clsEvent *event;
         clsError error;
         clsFondo fondo;
+        clsText texto;
     public:
         int iniciar(clsScreen*,clsEvent*);
         int run();
