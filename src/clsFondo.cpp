@@ -4,7 +4,7 @@ int clsFondo::Iniciar()
 {
     error.set(0); // seteo el error
 
-    setItems(8);// verificar siempre la cantidad de imagenes
+    setItems(10);// verificar siempre la cantidad de imagenes
     setI(0);
     error.set(load("recursos/pantallas/Fondos/1.png"));
     if (error.get())return error.get();
@@ -36,25 +36,14 @@ int clsFondo::Iniciar()
     error.set(load("recursos/pantallas/Fondos/8.png"));//ranking
     cout<<"carga SpriteFondos "<<endl;
     if (error.get())return error.get();
-//    const char * const SpriteFondos[6]=
-//{
-//    "recursos/pantallas/Fondos/1.png",
-//    "recursos/pantallas/Fondos/2.png",
-//    "recursos/pantallas/Fondos/3.png",
-//    "recursos/pantallas/Fondos/4.png",
-//    "recursos/pantallas/Fondos/5.png",
-//    "recursos/pantallas/Fondos/6.png" // faltan imagenes...
-//};
-//
-//    setItems(6);
-//    for(int i=0;i<6;i++)
-//    {
-//        setI(i);
-//        error.set(load(SpriteFondos[i]));
-//        cout<<"carga SpriteFondos "<<i<<endl;
-//        if (error.get())return error.get();
-//    }
-    cout<<"estoy casi afuera"<<endl;
+    setI(8);
+    error.set(load("recursos/pantallas/Fondos/9.png"));//ranking
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
+    setI(9);
+    error.set(load("recursos/pantallas/Fondos/10.png"));//ranking
+    cout<<"carga SpriteFondos "<<endl;
+    if (error.get())return error.get();
     setX(0); //eje x desde donde se cargan las imagenes
     setY(0); //eje y desde donde se cargan las imagenes
 
