@@ -35,7 +35,6 @@ carga SpriteFondos
 carga SpriteFondos 
 carga SpriteFondos 
 carga SpriteFondos 
-Generador de numeros aleatorios iniciado correctamente.
 ingrese a clsdespedida::iniciar
 carga SpriteFondos 
 carga SpriteFondos 
@@ -49,6 +48,7 @@ carga SpriteFondos
 ingreso al run
 ingrese a clspresentacion::run
 ingreso al keyCommand
+volver al menu: 1
 ingrese a clsMenu::run
 ingreso al clsMenu::keyCommand
 ingrese a clsJuego::run
@@ -75,41 +75,30 @@ aprete: 98
 ingreso al clsJuego::keyCommand
 precione b : 98
 **********GANE!!**********
+-puesto1: antoliano
+-puesto2: diego
+-puesto3: german2
+-puesto4: german2
+-puesto5: pepe
+-puesto6: diego
 ----------------------------no aprete ninguna tecla!
-aprete: 97
-nvoNombre: aÿ"
-aprete: 115
-nvoNombre: sÿ"
-----------------------------no aprete ninguna tecla!
-aprete: 100
-nvoNombre: dÿ"
-----------------------------no aprete ninguna tecla!
-aprete: 102
-nvoNombre: fÿ"
+nvoNombre: y
+nvoNombre: o
 ----------------------------no aprete ninguna tecla!
 ----------------------------no aprete ninguna tecla!
-aprete: 97
-nvoNombre: aÿ"
-aprete: 115
-nvoNombre: sÿ"
+-puesto1: antoliano
+-puesto2: diego
+-puesto3: german2
+-puesto4: german2
+-puesto5: pepe
+-puesto6: diego
 ----------------------------no aprete ninguna tecla!
-aprete: 100
-nvoNombre: dÿ"
-aprete: 102
-nvoNombre: fÿ"
-----------------------------no aprete ninguna tecla!
-----------------------------no aprete ninguna tecla!
-----------------------------no aprete ninguna tecla!
-aprete: 96
-nvoNombre: `ÿ"
-----------------------------no aprete ninguna tecla!
-aprete: 27
-nvoNombre: `ÿ"
-id: 2
-nombre: nombre2
-puntaje: 0
-proximo numero random: 1
 -Esto seria lo ganado: 1
+volver al menu(salio?): 1
+volver al menu: 1
+ingrese a clsMenu::run
+ingreso al clsMenu::keyCommand
+volver al menu(salio?): 0
 ingrese a clsdespedida::run
 ingreso al clsdespedida::keyCommand
 
@@ -139,6 +128,7 @@ Se destruyo la imagen7 del sprite sin Nombre
 Se destruyo la imagen8 del sprite sin Nombre
 Se destruyo la imagen9 del sprite sin Nombre
 Se destruyeron la imagenes del sprite sin Nombre
+El texto 8ûv se cerro correctamente.
 Se destruyo la imagen0 del sprite sin Nombre
 Se destruyo la imagen1 del sprite sin Nombre
 Se destruyo la imagen2 del sprite sin Nombre

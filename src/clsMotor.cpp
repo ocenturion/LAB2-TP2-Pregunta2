@@ -32,7 +32,9 @@ int clsMotor::run()
 
     error.set(presentacion.run());
     if(error.get()) return error.get();
-
+    while(menu.volveralMenu)
+    {
+        cout<<"volver al menu: "<<menu.volveralMenu<<endl;
     error.set(menu.run());
     if(error.get()) return error.get();
     if (menu.ingresoJuego)
@@ -40,6 +42,8 @@ int clsMotor::run()
             error.set(juego.run());
             if(error.get()) return error.get();
         }
+    cout<<"volver al menu(salio?): "<<menu.volveralMenu<<endl;
+    }
     error.set(despedida.run());
     if(error.get()) return error.get();
     return error.get();

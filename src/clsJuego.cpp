@@ -32,7 +32,6 @@ int clsJuego::iniciar(clsScreen*scr,clsEvent* ev)
     error.set(texto.init());
     if(error.get())
         return error.get();
-    random.init();
 
     return error.get();
 }
@@ -45,7 +44,7 @@ int clsJuego::run()
     screen->clean(BLUE);
     fondo.paste(screen->getPtr());
     screen->refresh();
-    bool salir=false;
+    bool salir=false,abcd=true;
     int i=0,a,devuelve,puntaje=0;
     while (!salir)
     {
@@ -62,12 +61,14 @@ int clsJuego::run()
                 if (event->getKey())
                 {
 
-                    if(keyCommand(&salir,event->getKey(),devuelve,puntaje)==1)
+                    if(keyCommand(&salir,event->getKey(),devuelve,puntaje,&abcd)==1)
                     {
                         puntaje++;
                     }
-                    i++;
-                    cout<<"proximo numero random: "<<i<<endl;
+                    if(abcd)
+                    {
+                        i++;
+                    }
                 }
             }
             break;
@@ -89,7 +90,7 @@ int clsJuego::run()
     return error.get();
 }
 
-int clsJuego::keyCommand(bool*salir,Uint16 key, int devuelve,int puntaje)
+int clsJuego::keyCommand(bool*salir,Uint16 key, int devuelve,int puntaje,bool*abcd)
 {
     cout<<"ingreso al clsJuego::keyCommand"<<endl;
     error.set(0);
@@ -118,6 +119,7 @@ int clsJuego::keyCommand(bool*salir,Uint16 key, int devuelve,int puntaje)
                 *salir=true;
             }
         }
+        *abcd=true;
     }
     break;
     case KEY_B:
@@ -141,6 +143,7 @@ int clsJuego::keyCommand(bool*salir,Uint16 key, int devuelve,int puntaje)
                 *salir=true;
             }
         }
+        *abcd=true;
     }
     break;
     case KEY_C:
@@ -164,6 +167,7 @@ int clsJuego::keyCommand(bool*salir,Uint16 key, int devuelve,int puntaje)
                 *salir=true;
             }
         }
+        *abcd=true;
     }
     break;
     case KEY_D:
@@ -187,6 +191,13 @@ int clsJuego::keyCommand(bool*salir,Uint16 key, int devuelve,int puntaje)
                 *salir=true;
             }
         }
+        *abcd=true;
+    }
+    break;
+    default:
+    {
+        *abcd=false;
+        cout<<"Aprete cualquier otra tecla :("<<endl;
     }
     break;
     }
@@ -351,13 +362,20 @@ int clsJuego::winner(int puntaje)
 
     ranking ranki;
     char nvoNombre[10],nombre[10];
-
-    int i=0,x=30,a=0;
-    bool salir=false,Esc=false;
+    int i=0,x=30;
+    int vueltas=0;
+    bool salir=false,Esc=false,entrar=false;
+    puntaje++;
     FILE *archivo;
     archivo=fopen("./RANKING.DAT","rb+");
     error.set(texto.loadFont("FONTS/FreeSans.ttf",30));
-    if(error.get())return error.get();
+    if(error.get())
+        return error.get();
+    for(int a=0; a<11; a++)
+    {
+        nvoNombre[a]='\0';
+        nombre[a]='\0';
+    }
     if(archivo!=NULL)
     {
         while(fread(&ranki,sizeof(ranking),1,archivo)==1 && !salir)
@@ -366,6 +384,7 @@ int clsJuego::winner(int puntaje)
             {
                 fondo.setI(9);
                 fondo.paste(screen->getPtr());
+                ranquin();
                 screen->refresh();
                 while(!Esc)
                 {
@@ -375,29 +394,51 @@ int clsJuego::winner(int puntaje)
                         {
                         case KEY_PRESSED:
                         {
-                            cout<<"aprete: "<<event->getKey()<<endl;
                             if (event->getKey()==KEY_ESCAPE)
                             {
                                 Esc=true;
                                 salir=true;
-                            }else if(event->getKey()==KEY_ENTER)
+                            }
+                            else if(event->getKey()==KEY_ENTER)
                             {
-                                ranki.puntaje=puntaje;
-                                fseek(archivo,sizeof(ranking)*(-1),1);
-                                fwrite(&ranki,sizeof(ranking),1,archivo);
-                                salir=true;
-                                Esc=true;
-//                            }else if(event->getKey()==KEY_BACKSPACE)
-//                            {
-//                                i--;
-//                                nvoNombre[i];
-                            }else
+                                if (!entrar)
+                                {
+                                    nombre[10]='\0';
+                                    ranki.puntaje=puntaje;
+
+                                    while (nombre[vueltas]!='\0')
+                                    {
+                                        ranki.nombre[vueltas]=nombre[vueltas];
+                                        vueltas++;
+                                    }
+                                    ranki.nombre[vueltas]='\0';
+                                    if(!salir)
+                                    {
+                                        fseek(archivo,sizeof(ranking)*(-1),1);
+                                        fwrite(&ranki,sizeof(ranking),1,archivo);
+                                        salir=true;
+                                    }
+                                    fondo.setI(9);
+                                    fondo.paste(screen->getPtr());
+                                    ranquin();
+                                    texto.write("AGREGADO!!",50,300,screen->getPtr());
+                                    screen->refresh();
+                                    entrar=true;
+
+                                }
+                            }
+                            else
                             {
-                                x=x+15;
-                                nvoNombre[i]=event->getKey();
-                                texto.write(nvoNombre,x,413,screen->getPtr());
-                                screen->refresh();
-                                cout<<"nvoNombre: "<<nvoNombre<<endl;
+                                if(i<10)
+                                {
+                                    x=x+15;
+                                    nvoNombre[0]=event->getKey();
+                                    texto.write(nvoNombre,x,413,screen->getPtr());
+                                    screen->refresh();
+                                    cout<<"nvoNombre: "<<nvoNombre<<endl;
+                                    nombre[i]=nvoNombre[0];
+                                    i++;
+                                }
                             }
                         }
                         break;
@@ -411,12 +452,31 @@ int clsJuego::winner(int puntaje)
                 }
             }
         }
-        cout<<"nvoNombre: "<<nvoNombre<<endl;
-        cout<<"id: "<<ranki.id<<endl;
-        cout<<"nombre: "<<ranki.nombre<<endl;
-        cout<<"puntaje: "<<ranki.puntaje<<endl;
+    }
     fclose(archivo);
+    return error.get();
 }
-return error.get();
+int clsJuego::ranquin()
+{
+    error.set(0);
+    ranking ranki;
+    int i=1,posY=110;
+    FILE *archivo;
+    archivo=fopen("./RANKING.DAT","rb");
+    error.set(texto.loadFont("FONTS/FreeSans.ttf",30));
+    if(error.get())
+        return error.get();
+    if (archivo !=NULL)
+    {
+        while(fread(&ranki,sizeof(ranking),1,archivo)==1)
+        {
+            cout<<"-puesto"<<i<<": "<<ranki.nombre<<endl;
+            texto.write(ranki.nombre,40,posY,screen->getPtr());
+            i++;
+            posY=posY+30;
+        }
+    }
+    fclose(archivo);
+    return error.get();
 }
 //hacer otra funcion para mostrar los ganadores

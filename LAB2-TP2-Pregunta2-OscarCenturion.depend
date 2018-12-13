@@ -136,7 +136,7 @@
 	<clsMenu.h>
 	<clsJuego.h>
 
-1543957721 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmotor.cpp
+1544675028 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmotor.cpp
 	"clsMotor.h"
 
 1543955455 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsfondo.h
@@ -165,15 +165,16 @@
 1543954016 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsdespedida.cpp
 	"clsDespedida.h"
 
-1543958439 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmenu.cpp
+1544675818 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsmenu.cpp
 	"clsMenu.h"
 
-1543957721 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmenu.h
+1544674717 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsmenu.h
 	<clsScreen.h>
 	<clsEvent.h>
 	<adnConsts.h>
 	<clsError.h>
 	<clsFondo.h>
+	<clsText.h>
 	<clsPresentacion.h>
 
 1543940228 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsranking.cpp
@@ -181,16 +182,15 @@
 
 1543940228 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsranking.h
 
-1544494761 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsjuego.h
+1544676816 c:\users\oscar\documents\github\lab2-tp2-pregunta2\include\clsjuego.h
 	<clsScreen.h>
 	<clsEvent.h>
 	<adnConsts.h>
 	<clsError.h>
 	<clsFondo.h>
 	<clsText.h>
-	<clsRandom.h>
 
-1544499016 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsjuego.cpp
+1544677036 source:c:\users\oscar\documents\github\lab2-tp2-pregunta2\src\clsjuego.cpp
 	"clsJuego.h"
 
 1415818188 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\adn-x\clsaudio.cpp
@@ -355,7 +355,7 @@
 	<clsFondo.h>
 	<clsPresentacion.h>
 
-1544069552 c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\include\clsjuego.h
+1544494761 c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\include\clsjuego.h
 	<clsScreen.h>
 	<clsEvent.h>
 	<adnConsts.h>
@@ -367,10 +367,10 @@
 1543954016 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\src\clsdespedida.cpp
 	"clsDespedida.h"
 
-1544054991 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\src\clsfondo.cpp
+1544488388 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\src\clsfondo.cpp
 	"clsFondo.h"
 
-1544136327 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\src\clsjuego.cpp
+1544573398 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\src\clsjuego.cpp
 	"clsJuego.h"
 
 1543958439 source:c:\users\ocenturion\downloads\mis-descargas\utn\laboratorio\laboratorio2\tp2\lab2-tp2-pregunta2\src\clsmenu.cpp
